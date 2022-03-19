@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculadora"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/titilliumweb_black"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/lblTabuada"
+        android:fontFamily="@font/titilliumweb_lightitalic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:text="5 + 1"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <Button
+        android:id="@+id/btnSete"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/btnOito"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/btnNove"
+        android:layout_margin="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="9"
+        />
+        <Button
+            android:id="@+id/btnSuntracao"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="-"
+            />
+    ></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnQuatro"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btnCinco"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btnSeis"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="6"
+            />
+        <Button
+            android:id="@+id/btnSoma"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="+"
+            />
+        ></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUm"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnDois"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnTres"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="3"
+            />
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="*"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnZero"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:text="0"
+            />
+        <Button
+            android:id="@+id/btnDiviCalc"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="/"
+            />
+    </LinearLayout>
+        <Button
+            android:id="@+id/btnCalcCalculadora"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:text="Calcular"
+            />
+    </LinearLayout>
+</LinearLayout>
+

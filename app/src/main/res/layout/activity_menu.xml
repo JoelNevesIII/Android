@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/btnTabuada"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:text="Tabuada"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/titilliumweb_bold"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnCalculadora"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:text="Calculadora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/titilliumweb_bold"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnApp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:text="APP"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/titilliumweb_bold"
+        />
+
+
+
+</LinearLayout>
