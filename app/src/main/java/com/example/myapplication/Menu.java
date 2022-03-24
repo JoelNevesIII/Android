@@ -13,6 +13,7 @@ public class Menu extends AppCompatActivity {
     Context context;
     Button btnTabuada;
     Button btnCalculadora;
+    Button btnApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class Menu extends AppCompatActivity {
         context = Menu.this;
         btnTabuada = findViewById(R.id.btnTabuada);
         btnCalculadora =findViewById(R.id.btnCalculadora);
+        btnApp = findViewById(R.id.btnApp);
 
 
         btnTabuada.setOnClickListener(new View.OnClickListener() {
@@ -38,6 +40,16 @@ public class Menu extends AppCompatActivity {
             public void onClick(View view) {
                 //Acessar uma nova activity
                 Intent intent = new Intent(context, Calculadora.class);
+                startActivity(intent);
+
+            }
+        });
+
+        btnApp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Acessar uma nova activity
+                Intent intent = new Intent(context, App.class);
                 startActivity(intent);
 
             }
