@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +15,8 @@ public class Menu extends AppCompatActivity {
     Button btnTabuada;
     Button btnCalculadora;
     Button btnApp;
+    Button btnSair;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,8 @@ public class Menu extends AppCompatActivity {
         btnTabuada = findViewById(R.id.btnTabuada);
         btnCalculadora =findViewById(R.id.btnCalculadora);
         btnApp = findViewById(R.id.btnApp);
+        btnSair = findViewById(R.id.btnSair);
+        SharedPreferences preferences = getSharedPreferences("Login", context.MODE_PRIVATE);
 
 
         btnTabuada.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +56,19 @@ public class Menu extends AppCompatActivity {
                 //Acessar uma nova activity
                 Intent intent = new Intent(context, App.class);
                 startActivity(intent);
+
+            }
+        });
+
+        btnSair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, MainActivity.class);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("Usuario", "");
+                editor.apply();
+                startActivity(intent);
+                finish();
 
             }
         });
