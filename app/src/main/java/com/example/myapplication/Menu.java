@@ -16,6 +16,7 @@ public class Menu extends AppCompatActivity {
     Button btnCalculadora;
     Button btnApp;
     Button btnSair;
+    Button btnPix;
 
 
     @Override
@@ -28,6 +29,7 @@ public class Menu extends AppCompatActivity {
         btnCalculadora =findViewById(R.id.btnCalculadora);
         btnApp = findViewById(R.id.btnApp);
         btnSair = findViewById(R.id.btnSair);
+        btnPix = findViewById(R.id.btnPix);
         SharedPreferences preferences = getSharedPreferences("Login", context.MODE_PRIVATE);
 
 
@@ -72,6 +74,14 @@ public class Menu extends AppCompatActivity {
 
             }
         });
+        btnPix.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, ListaPixActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
 
