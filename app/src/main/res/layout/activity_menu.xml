@@ -71,6 +71,21 @@
 
 
     <Button
+        android:id="@+id/btnMapa"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:text="MAPA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/titilliumweb_bold"
+        />
+
+
+    <Button
         android:id="@+id/btnSair"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"

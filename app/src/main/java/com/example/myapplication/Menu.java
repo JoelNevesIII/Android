@@ -17,6 +17,7 @@ public class Menu extends AppCompatActivity {
     Button btnApp;
     Button btnSair;
     Button btnPix;
+    Button btnMapa;
 
 
     @Override
@@ -30,6 +31,7 @@ public class Menu extends AppCompatActivity {
         btnApp = findViewById(R.id.btnApp);
         btnSair = findViewById(R.id.btnSair);
         btnPix = findViewById(R.id.btnPix);
+        btnMapa = findViewById(R.id.btnMapa);
         SharedPreferences preferences = getSharedPreferences("Login", context.MODE_PRIVATE);
 
 
@@ -81,6 +83,15 @@ public class Menu extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnMapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
