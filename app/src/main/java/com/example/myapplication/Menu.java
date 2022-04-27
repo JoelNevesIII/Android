@@ -79,7 +79,7 @@ public class Menu extends AppCompatActivity {
         btnPix.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, ListaPixActivity.class);
+                Intent intent = new Intent(context, ListaLinguagemActivity.class);
                 startActivity(intent);
             }
         });
