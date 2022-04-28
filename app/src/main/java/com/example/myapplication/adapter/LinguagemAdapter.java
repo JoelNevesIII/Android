@@ -10,8 +10,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+import com.example.myapplication.CadastroLinguagemActivity;
 import com.example.myapplication.R;
 import com.example.myapplication.model.Linguagem;
+import com.example.myapplication.Controler.LinguagemController;
+
 
 import java.util.ArrayList;
 
@@ -46,9 +50,9 @@ public class LinguagemAdapter extends ArrayAdapter<Linguagem> {
             rowView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    //Intent tela = new Intent(context, NOVATELAAQUI_Activity.class);
-                    //tela.putExtra("id", objeto.getId());
-                    //context.startActivity(tela);
+                    Intent tela = new Intent(context, CadastroLinguagemActivity.class);
+                    tela.putExtra("id", objeto.getId());
+                    context.startActivity(tela);
                 }
             });
 

@@ -39,6 +39,8 @@ public class LinguagemController {
                 objeto = new Linguagem();
                 objeto.setId(resultado.getInt(resultado.getColumnIndexOrThrow("id")));
                 objeto.setNome(resultado.getString(resultado.getColumnIndexOrThrow("nome")));
+                objeto.setDescricao(resultado.getString(resultado.getColumnIndexOrThrow("descricao")));
+
             }
 
             return objeto;
